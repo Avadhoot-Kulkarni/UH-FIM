@@ -1,166 +1,190 @@
-# UH-FIM: Unified Hash-Based File Integrity Monitor
+# UH-FIM — Unified Hash-Based File Integrity Monitor
 
-**Research Project — Review 2 Implementation**
-Adaptive Multi-Granularity Hashing + Contextual Risk Scoring
+UH-FIM is a file integrity monitoring system that combines adaptive file hashing with context-aware risk scoring. It is designed to detect changes to monitored files, classify their potential significance, and prioritize alerts based on file sensitivity and observed activity.
 
----
+The project explores whether different hashing strategies can be applied to different file categories while maintaining useful integrity checks and reducing unnecessary work on frequently changing data.
 
-## Folder Structure
+## Features
 
-```
-uhfim/
-│
-├── uhfim.py                  ← MAIN ENTRY POINT (run this)
-│
-├── core/
-│   ├── hasher.py             ← Adaptive hashing engine (FULL / BLOCK / SAMPLE)
-│   ├── baseline.py           ← Baseline creation, loading, tamper detection
-│   ├── monitor.py            ← Live watchdog monitor + one-shot scan
-│   └── risk.py               ← Risk scoring formula
-│
-├── utils/
-│   ├── categorizer.py        ← Maps file type → category → strategy
-│   └── logger.py             ← Dual output: terminal + log file
-│
-├── data/
-│   ├── baseline.json         ← Auto-generated: hash snapshot of monitored files
-│   └── baseline.checksum     ← Auto-generated: tamper-detect checksum of baseline
-│
-├── logs/
-│   └── uhfim.log             ← Auto-generated: full execution log
-│
-├── demo_files/               ← The folder being MONITORED (your test target)
-│   ├── system/               ← CRITICAL files (passwd, kernel_config)
-│   ├── executables/          ← EXECUTABLE files (app.py, deploy.sh)
-│   ├── data_files/           ← DATA files (config.json, readme.txt)
-│   └── logs/                 ← DATA files (app.log)
-│
-└── requirements.txt
-```
+- **Adaptive hashing:** Supports full-file, block-based, and sampled hashing strategies.
+- **File classification:** Categorizes monitored files as critical, executable, or data files.
+- **Integrity verification:** Creates a baseline of file metadata and hashes, then compares subsequent scans against it.
+- **Risk-based alerts:** Assigns risk scores using file sensitivity, time-based anomalies, and change frequency.
+- **Live monitoring:** Detects file-system events through Watchdog.
+- **Logging:** Records monitoring activity, integrity checks, and alerts for later inspection.
+- **Benchmark evaluation:** Includes a synthetic 300-file dataset, manifests, evaluation scripts, and validation results.
 
----
+## How It Works
 
-## Setup
+UH-FIM follows a baseline-and-monitoring workflow:
+
+1. **Classification** — Each file is assigned a category based on its type and configured rules.
+2. **Hashing** — The system selects a hashing strategy according to the file category and implementation settings.
+3. **Baseline creation** — File hashes and associated metadata are stored as a reference snapshot.
+4. **Integrity checking** — A scan or file-system event triggers verification against the baseline.
+5. **Risk assessment** — Detected changes are evaluated using the configured risk-scoring model.
+6. **Alerting and logging** — The system reports changes and records relevant events.
+
+## Hashing Strategies
+
+UH-FIM implements three hashing approaches:
+
+| Strategy | Description |
+|---|---|
+| FULL | Hashes the entire file. |
+| BLOCK | Hashes selected blocks of a file. |
+| SAMPLE | Hashes selected portions of a file. |
+
+The intended trade-off is between the cost of hashing and the ability to detect content changes. Partial hashing can reduce the amount of data read, but it may miss modifications outside the sampled or selected regions. Full-file hashing provides broader content coverage at a higher I/O cost.
+
+The strategy assigned to a file depends on the project's categorization and hashing logic.
+
+## Risk Scoring
+
+UH-FIM combines file sensitivity, time-based anomalies, and change frequency into a configurable risk score.
+
+The model uses the following weighted components:
+
+| Component | Weight | Purpose |
+|---|---:|---|
+| File sensitivity | 0.50 | Reflects the importance of the affected file category. |
+| Time anomaly | 0.30 | Represents whether a change occurs during an unusual time window. |
+| Change frequency | 0.20 | Represents repeated changes within a defined interval. |
+
+The score is calculated as:
+
+\[
+R = 100 \times (0.50S + 0.30T + 0.20F)
+\]
+
+where \(S\), \(T\), and \(F\) are normalized values between 0 and 1 for sensitivity, time anomaly, and change frequency, respectively.
+
+The implementation defines alert thresholds for different severity levels. These weights and thresholds are configurable design choices, not universal measures of security risk.
+
+## Requirements
+
+- Python 3
+- Watchdog
+
+Install the dependency from the project directory:
 
 ```bash
-# 1. Install dependencies
-pip install watchdog
-
-# 2. Navigate to project folder
-cd uhfim/
+python -m pip install watchdog
 ```
-
----
 
 ## Usage
 
-### Step 1 — Run the full demo (easiest way)
+Run commands from the repository root, where `uhfim.py` is located.
+
+### Run the demo
+
 ```bash
 python uhfim.py demo
 ```
-This creates demo_files/, baselines them, and shows you exactly what to modify.
 
----
+The demo exercises the monitoring workflow using the project's sample files.
 
-### Step 2 — Or manually: Create a baseline first
+### Create a baseline
+
 ```bash
 python uhfim.py baseline demo_files/
 ```
-This scans every file, assigns it a category, computes the appropriate hash,
-and saves everything to data/baseline.json.
 
----
+This records the initial state of the monitored files.
 
-### Step 3a — One-shot scan (check all files once)
+### Scan for changes
+
 ```bash
 python uhfim.py scan demo_files/
 ```
-Walks all files, compares hashes, prints risk-scored alerts.
 
-### Step 3b — Live monitor (real-time watchdog)
+A one-shot scan compares the current files against the stored baseline and reports detected changes.
+
+### Monitor files continuously
+
 ```bash
 python uhfim.py monitor demo_files/
 ```
-Watches for changes in real-time. Every file save triggers immediate verification.
 
----
+The live monitor uses file-system events to initiate checks when monitored files change.
 
-## Demo Script (for your presentation)
+### Review logs
 
-**Terminal 1 — Start monitoring:**
 ```bash
-python uhfim.py baseline demo_files/
-python uhfim.py monitor demo_files/
-```
-
-**Terminal 2 — Simulate attacks:**
-```bash
-# Simulate attacker adding a backdoor user (CRITICAL file)
-echo "attacker:x:0:0:hacker:/root:/bin/bash" >> demo_files/system/passwd
-
-# Simulate malware injected into script (EXECUTABLE file)
-echo "import os; os.system('rm -rf /')" >> demo_files/executables/app.py
-
-# Simulate normal log rotation (DATA file — low risk)
-echo "[INFO] Health check OK" >> demo_files/logs/app.log
-```
-
-**What you'll see:**
-- `passwd` → CRITICAL/MEDIUM alert (sensitivity=1.0, full hash detected 1-byte change)
-- `app.py`  → LOW/HIGH alert (sensitivity=0.7, block hash caught tail injection)
-- `app.log` → INFO alert (sensitivity=0.3, normal log growth = low priority)
-
-**The contrast between these three alerts = your research contribution.**
-
----
-
-## How It Differs From Existing Tools (for your teacher)
-
-| Feature | Tripwire / AIDE | UH-FIM (this project) |
-|---|---|---|
-| Hashing | Uniform SHA-256 on ALL files | Adaptive: FULL / BLOCK / SAMPLE |
-| Performance | O(n) for every file | O(1) for executables, O(k) for data |
-| Alert priority | All alerts equal | Risk-scored 0–100 |
-| Context | None | Time anomaly + frequency tracking |
-| False positives | High (log rotations = alerts) | Reduced by risk scoring |
-
----
-
-## Risk Score Formula
-
-```
-Risk Score (0–100) = α × Sensitivity + β × TimeAnomaly + γ × Frequency
-
-Where:
-  α = 0.50  (file sensitivity: CRITICAL=1.0, EXEC=0.7, DATA=0.3)
-  β = 0.30  (time: 10PM–6AM = 0.8, daytime = 0.1)
-  γ = 0.20  (frequency: 5+ changes in 5 min = 1.0)
-```
-
-Alert thresholds: CRITICAL ≥ 80 · HIGH ≥ 60 · MEDIUM ≥ 40 · LOW ≥ 20 · INFO < 20
-
----
-
-## Log File
-
-All activity is written to `logs/uhfim.log`. This includes:
-- Every file scanned with its category, strategy, and hash
-- Every risk score computed with full formula breakdown
-- Every alert raised with old/new hashes and size delta
-- Baseline creation and integrity verification events
-- Session start/stop markers
-
-
-# Step 1 — show teacher the baseline being created
-python uhfim.py demo
-
-# Step 2 — modify files LIVE
-echo "attacker:x:0:0:hacker:/root:/bin/bash" >> demo_files/system/passwd
-echo "import os; os.system('rm -rf /')" >> demo_files/executables/app.py
-echo "[INFO] health check" >> demo_files/logs/app.log
-
-# Step 3 — scan and show risk scores
-python uhfim.py scan demo_files/
-
-# Step 4 — optionally show the log file
 cat logs/uhfim.log
+```
+
+The log is generated at runtime and is excluded from version control.
+
+## Demonstration
+
+For a controlled test, create a baseline first:
+
+```bash
+python uhfim.py baseline demo_files/
+```
+
+In another terminal, modify a sample file:
+
+```bash
+echo "# integrity test" >> demo_files/data_files/readme.txt
+```
+
+Then run a scan:
+
+```bash
+python uhfim.py scan demo_files/
+```
+
+The result depends on the configured hashing strategy, baseline state, and implementation behavior. Restore or regenerate the sample baseline before repeating the experiment.
+
+**Safety note:** The files under `demo_files/` are test inputs. Use the sample directory for experiments rather than pointing the monitor at sensitive system files.
+
+## Benchmark Dataset
+
+The repository includes a synthetic benchmark containing 300 files across three categories:
+
+- `critical` — 100 files
+- `data` — 100 files
+- `executables` — 100 files
+
+The dataset includes SHA-256 manifests and supporting evaluation scripts. Validation outputs and a separate stealth-stress test are available under `uhfim_300_dataset/results/`.
+
+The benchmark is intended to make the evaluation repeatable. Its results should be interpreted in the context of the generated files and test conditions; they do not establish detection performance for every real-world workload.
+
+See [README_UH-FIM_300_DATASET.md](README_UH-FIM_300_DATASET.md) for dataset details and [README_VALIDATION.md](README_VALIDATION.md) for additional validation information.
+
+## Repository Structure
+
+```text
+UH-FIM/
+├── core/
+│   ├── baseline.py
+│   ├── hasher.py
+│   ├── monitor.py
+│   └── risk.py
+├── data/                         # Runtime baseline state
+├── demo_files/                   # Sample monitoring targets
+├── utils/
+│   ├── categorizer.py
+│   └── logger.py
+├── uhfim_300_dataset/
+│   ├── clean/
+│   ├── manifest.csv
+│   ├── manifest.json
+│   └── results/
+├── uhfim.py
+├── uhfim_dataset_eval.py
+├── evaluate_uhfim_300.py
+├── generate_uhfim_300_dataset.py
+├── README_UH-FIM_300_DATASET.md
+└── README_VALIDATION.md
+```
+
+Runtime baseline files and logs are generated locally and are not included in the repository.
+
+## Scope and Limitations
+
+UH-FIM is a research implementation intended to explore adaptive hashing and risk-based prioritization. Partial hashing cannot guarantee detection of arbitrary changes to unexamined file regions. Results from synthetic benchmarks should not be treated as proof of complete detection coverage or as a substitute for testing against representative workloads.
+
+The effectiveness of the system depends on its hashing strategy, file categorization, baseline integrity, monitoring configuration, and the environment in which it runs.
