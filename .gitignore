@@ -1,0 +1,32 @@
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Runtime logs
+logs/
+# *.log
+
+# UH-FIM 300 dataset runtime state
+uhfim_300_dataset/work/
+uhfim_300_dataset/results/evaluation_baseline.json
+uhfim_300_dataset/results/evaluation_baseline.checksum
+
+# Keep the 45-file evaluation dataset out of this repository
+uhfim_evaluation_dataset/
+
+# Duplicate evaluation script
+evaluate_uhfim_300 (1).py
+
+# Local backup files
+*.bak
+*.pre_cave_*
+
+# Generated application baseline state
+data/baseline.json
+data/baseline.checksum
+
+# Packaged dataset archive (dataset is tracked individually)
+UH-FIM_300_file_dataset.zip

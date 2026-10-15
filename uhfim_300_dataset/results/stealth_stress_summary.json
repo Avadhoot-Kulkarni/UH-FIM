@@ -1,0 +1,17 @@
+{
+  "stress_test_count": 30,
+  "metrics": {
+    "rows": 30,
+    "TP": 0,
+    "FN": 30,
+    "FP": 0,
+    "TN": 0,
+    "accuracy": 0.0,
+    "precision": 0.0,
+    "recall_detection_rate": 0.0,
+    "false_positive_rate": 0.0,
+    "f1": 0.0
+  },
+  "purpose": "Diagnostic-only adversarial probes mutate bytes outside adaptive coverage while restoring size and modification time.",
+  "interpretation": "Misses are an expected limitation of metadata-triggered escalation when no signal changes. A periodic full scan or always-on full hashing is needed to cover this case; do not merge this subset into the main score without labelling it."
+}

@@ -1,0 +1,2728 @@
+{
+  "dataset_name": "UH-FIM 300-file synthetic integrity benchmark",
+  "seed": 20261015,
+  "file_count": 300,
+  "category_counts": {
+    "CRITICAL": 100,
+    "EXECUTABLE": 100,
+    "DATA": 100
+  },
+  "size_bands": {
+    "small_4KiB": 4096,
+    "medium_64KiB": 65536,
+    "large_256KiB": 262144
+  },
+  "size_distribution_per_category": {
+    "small_4KiB": 34,
+    "medium_64KiB": 33,
+    "large_256KiB": 33
+  },
+  "sha256_definition": "SHA-256 of every complete file at generation time; this is the ground-truth manifest.",
+  "limitations": [
+    "Synthetic content, not a representative sample of real operating-system files or malware.",
+    "Extensions are selected to exercise UH-FIM categorization; contents are intentionally opaque bytes.",
+    "No dataset can guarantee a target score. Results measure the specified evaluation scenarios only."
+  ],
+  "files": [
+    {
+      "relative_path": "critical/critical_001.sys",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "fcf1b1d0851bfd1d22b23dd23757a4263311ad3ce146993b4de73891260c8f68",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_002.ko",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "9a5ed3ac098c04091f75e35907cd616db39781345c313caa6e91e153d5fec732",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_003.img",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "2894f7b6cc1dd656cb3c68b30861b5784e0aa4c8293d9b0fbbc8c367ecd5ea58",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_004.iso",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "3423de924d834c0581058d6f32a5f440c8e2df7c102c7e6c137dbe48a6380bc4",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_005.pem",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "833f61a2d240c75acd6741d94501455ada3ab5c3a21af4778aacaa410694b618",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_006.key",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "5e2d94021e3ee47afb8c036d3a26a64ba066cc7ea7e99e79b38d2fd0f895fef1",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_007.crt",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "0c2afb4d5c239bd0e6e1f7c3fcf22a32a7b2586dd106839c6308f10d34c2779a",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_008.cer",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "be4166152e4fe96747fee8677cecafa23013819f1d498c62db3bfc592f75dc37",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_009.sys",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "55996102d99c2669079a052a2d3d40a7d8bfc2720f397205418f72f73263caf4",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_010.ko",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "65b3f7ed600fbb60951a533648125b714b380a5fb9cb0c281b1940094c44f15f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_011.img",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "2153c847d35d499020ad94cdb018464958e95814c602dfea1d5ebacc679ca186",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_012.iso",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "f411867220f7f990d4bbabb0bdd16dacedd2358a4ec78af92fc2f4d28cabe3b2",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_013.pem",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "65f8695ba51d57ec8383f23b28ea6912d7e26afac85858d0854ffdcc6800bc41",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_014.key",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "c1ded5ea679ec0601c8ae809c2a07a223eb5972a1dc00180a93b011f3e6dc0d6",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_015.crt",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "5c6887e6c9ba3126153272ba0ac8ab498ac3b37f26f6e2d0857cb17206542f0f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_016.cer",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "379d1186f71d2cae743f15df6845b9978bbf671ba31dc4555aaaff87ea5fa156",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_017.sys",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "c7ba86e0ea3084bca1273053b8c3324ffe6ac0587edc9e382d4856819190afff",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_018.ko",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "7403d94ddd018797b8e543e9700399d5941865ea17a15cd10bfa85c4077619a8",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_019.img",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "78d5c7eec6c44a1de5f2ac471b9e105b4b304e69d0eb6113793149bc9bd2cece",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_020.iso",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "d93de30db5b3ed879a414e2b29cebf57347bd4ddbd4502479e95ea8244e2fa62",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_021.pem",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "a6dab181183a410a2db343b876ac443604bbd6b0711da8753904d10d866d6d9f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_022.key",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "d266e92e02e0842289ba17a74514b8483ebb59d48cc628034fbeb76af4b86310",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_023.crt",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "f94cce85d4a62f9e3420a88cf4347f4c11318eb851a1c53079d942d360b68059",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_024.cer",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "c898b6d76887f30baff674f2f9e25cf6f36fb3cbcc86c78c504a87921ff28a03",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_025.sys",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "85bcd1d6ef93f6ae58d55d647721778f5a6ab9b3dea5319a1387ce7d3e4b2b2f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_026.ko",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "dcb706c19c41787c241c2a43cbd018b703b2ff27c3cde71065006e00e88a33d6",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_027.img",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "73769a1462faea5d19375b8acf786935fa827244bf310f5a3ba5a26581225b9d",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_028.iso",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "2c8bca33a88516f4a12fbb35a88a558705b8a903644f7b97ad904840fd6ed0f3",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_029.pem",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "7275f28cfa432e8c242c4199781aa00082c929620bcaed09c4b3bcbd5edb05a5",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_030.key",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "d1444b79525f69cc745ae477f9726e69c44b66021bc75282dd90025f3dd7cf29",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_031.crt",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "52cf47281eb77385501d3b7beb06947722597173d1bddafdc34116b244adf3ea",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_032.cer",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "d0f61c080b11760d2770a7fcdc59d05d502fff988ddec7ddaeaee47a494333c3",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_033.sys",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "65fbb422fb1dd12b431aec46fd98055e12a48b76f7c930ee3a348146174c2141",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_034.ko",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "a2b24cdedf802bb370e83f15734626b8a39305fdec802a0ada219a0effcf6161",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_035.img",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "4041ac76449db2f7c013b084eeb3bacd4c4d435a6efed6420fa7510fe950d963",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_036.iso",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "109c091283fb483571da75c5e4686269e51440f3bae902f9a941202c048e4957",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_037.pem",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "c38862557260bee91f6acef35ca447cbd6751bfa071a86baedaee55effdadc67",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_038.key",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "9410e0107b180a9eea29b72f5ea3001b9e90ff17481494b3bfd93b3e8b0aa40e",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_039.crt",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "e5c5548f23b933f03ee3e978332bda240f0fdc80c6a8898706d67b2744e834f1",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_040.cer",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "29f82a9106e1a564e3a57fee43ac4c3e3fbca9ed4866301cf5cb88bc7d251b72",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_041.sys",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "d0c710a43bbbe3c6e77ee6dc294eb63880b28f62779a92d96fb90fd07e2d335b",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_042.ko",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "fc8679a4cffff6d691113105e92993727d695ac6a9551dddb70696e3a1f3e8a8",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_043.img",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "4894e5f361d2c91385c779ff26a37673c7a8cfa501c965e1ffd6045e27c6fa75",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_044.iso",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "97bb200e43b62f2249f9b4ec38ee267e006625dbbf567197a592eff5de5ee6ce",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_045.pem",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "a63edac7a8d4706d13db8ed1a5492943e5c6c86947df9765194f42728bd44bbd",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_046.key",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "e15ea8f028e17f9c9af1d56c2754250c1a45b110821b4437c26dc850ba1c2101",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_047.crt",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "933ccacdf6cf5323515c9151754423d86cb1bb3b03bfac7a6acda7b2bdfc1377",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_048.cer",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "2bd274f5ec6a23b53c0f625dada701d3413a00f23d9371b92d4043c96cfb128a",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_049.sys",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "e572284eca92a9a8b178b0dfc7dabf4413fe147444b12f5646172c0e84d14eac",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_050.ko",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "90e1d201eee64efb0eabdc4f937db8bc90e446ff9ed038938e04bdaf48b6169b",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_051.img",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "9e658c73a3e5e3b9ae39cf4a117fd03fb06aa5b94a748b7a15f51c13b0303819",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_052.iso",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "1c163622848db53b3e17d152f001be18a6e9b4703fa10562a93e8d94e5de7f88",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_053.pem",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "d76dd2022578f95f6541a477ba356349f08b7bed353399b4d98069c907ee957f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_054.key",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "099bcc4697da7496ec9b44d63ad8d417bf06c58213500eddbeb75d24d5e27771",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_055.crt",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "eae9280dd5f97c2be0360ef8e08729495e4e6f752aa4c7ab79fb601183b5a1b0",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_056.cer",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "e3a2db8e84a56ba8a223257bc70dbbe6f2a8981d16b2c732a94d04384b8b3138",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_057.sys",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "5890406fc36ac1ba02c3ea62fe45ca24786a9473174409ac91e5f84b96dbc1ea",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_058.ko",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "322f08a66e6b7735235813cf3c182ae5869b83ac9c42662e5612f220ca9f1694",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_059.img",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "399a0285118bd5b4a773ffa04d72162e685de1d1dd1ad014e4b76012e46c055d",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_060.iso",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "87c9d2c4747fa985a090ae0b1a2535a6c309764aa4c99ed58d8d2539f84cd823",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_061.pem",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "4410f99a7126b86dcc57b5edbfb6b17e554f65832c44d31295dd84b059a04160",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_062.key",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "703ebacda47e24ae7ebdd4e67105d0021daa6287bbf5e3626f037206c0fb1eee",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_063.crt",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "472e6683974c690a7038b2a55af684846714b5678ad4f67408a2812fe51548fc",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_064.cer",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "abee67c6341488883ba10be411efdbc1c89eb39fbe02a703567bc89020facbb0",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_065.sys",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "2d505faf40a4d8eaf600ec5fc9ec6c3f363f9c4482fe036c387ba4d717969764",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_066.ko",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "22e921ba5bf43e525d36e393b549b8156960fc07dfb7a4c68f574945c19a539e",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_067.img",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "ed86b2b11d1ec48ccef6060b4638485a53ec111dd48a6bc60396be17e293b530",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_068.iso",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "4e56620c4b313f8306c7a1c68c6b63b97b974779b2f04427995eeeafd4d84937",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_069.pem",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "73047e9056211446a78bfa538a5054b2ababbe2a9e0d00e8770305a4f35e01c9",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_070.key",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "40691ca85e336ff8bf2beb8d204f7b2bc53b2fb59d9ab1bbf8a13639ddf2e74f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_071.crt",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "4814486d1cd5ef118f07f476daae8d997393e325699aa3575ab68bd2bb592fc5",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_072.cer",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "c70ed0e05fdea0ec17c1a46cb94c79159f628c0133f22b8633746345a611eab4",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_073.sys",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "0f06142fc53cb613ca17b21cbc98587f2fa7b840a320923227db15cfba3cbda4",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_074.ko",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "64aae38f8ad6d45916442fb0e36347544878a5df2574ca029ccf79ec932969ea",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_075.img",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "1f8df7521995fb8839a688d8c3004c6e9b0a4d0702b61a192486452b269a85b3",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_076.iso",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "a0bf5d5dbaf7d60490dfc85d3fd0ac6388c58c60aac9787ced7951b63fcf32e9",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_077.pem",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "81ca5545a3e228b3fc479c839df070a4f5f3593e4ecde7f03171132be731c4fc",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_078.key",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "1192b476c217b29dc7c1303f186f3dacaa980f146adb78a77e388b948bc5961b",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_079.crt",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "8c7079bfef10860cdac4f28b874477a9ce786050faad18e105785b849e1114cf",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_080.cer",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "d02f681118cd149d63c4c36743a4f1cb52ac9215ebf779faee7f78ca76abc7bc",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_081.sys",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "d90d4f22eec592957fe796e6c9fac478332beeb132fcc67d49410fefc5f10674",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_082.ko",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "8f6871fa4f4c891c2162914a1f4ed5406333a28d886b8b0f6dc1bb722538fe34",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_083.img",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "747ae282e1e30ccb09b11297e2f406f8e4d11b50732db9b136809bb937051059",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_084.iso",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "60ff7c9b7745cccc84a8e7c8b6054d5f27fdcf4ede9d6f60a2143343be49f60d",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_085.pem",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "c9f6fca8ff0fa151a1e8780ebf4b0f35ea6ae7eab8933c9a4542ee7b99b7b2ea",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_086.key",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "125b9711dc8191252f50765e38f07f1d1c4ca362737fbecc9e872eb63314cd46",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_087.crt",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "9e8333b1f4cf6caf2929a857d3c7720dbfa21351b07f3e64b3a27672133a06ed",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_088.cer",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "1180501aa09f3f90d5ed8362deca58c5b7f0b6f139e84246a167b7e5965a548f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_089.sys",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "600c4dd469db9cd0a6b1cb270d3c5dc4064e0e9292e7d758373766d21d6586bf",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_090.ko",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "5b6259355897f5ed3ecd41051ee7384aabd6a3fee68664ddb0c4340bef6e31bb",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_091.img",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "acb40218390f2f658eb9bfd9f2fb184191e7565fcc16f8bfa03dca543ee1ebd0",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_092.iso",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "8ef8013f11f43b5fa5c50f8ca2783683f896c6f3517cd7a6cfb8b9805d4af2da",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_093.pem",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "858cced42ea8e700a1a27f3e7b22f538405a37d825918daf900c20b027a5c996",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_094.key",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "d47ade9cd40247acd548554d3ed15f4dd077360f947f13d24b8864dbdfc3c5e1",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_095.crt",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "d5557d2f46063e272861e1c01e4f0c227e43a00cb1762487f8ae54363f25670d",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_096.cer",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "12e5df0a70c763ae1f68a510d15c752a0640b355e991e89e0d8997ae2171ec95",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_097.sys",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "1c26487e63e577c415518175ca615d93a8b772ae64fd1fdd726154909fad8a82",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_098.ko",
+      "category_expected": "CRITICAL",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "e4becb75ec9e98b09b797d97c43c003fa7dd221208ead47172b5890f267ee181",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_099.img",
+      "category_expected": "CRITICAL",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "e57d40f35bd699bb085ebf3c7693540162acfd9bec45954934f081a4679f37f6",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "critical/critical_100.iso",
+      "category_expected": "CRITICAL",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "cb9b832e5a5db4eb4af6b1acb6d4aa27baea62102b23cca13248980eca20ec6f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_001.log",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "ae16a974da51eafd535b7b7dc731aaaec7642a42e419d302c2cbabd422fe28d4",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_002.txt",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "d99ad01e54bcc8eab26273a3366271a002afa065095b593ca8fa2fdca594ab1e",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_003.out",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "10dd726e3264713ce5fc72afb101c79c2d2eac4e53acccd38800b85dda909a22",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_004.err",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "1170ae1bc9c94ad11084e19408d085f43ec2aa0fc672749d5eaf8ee36c7af11e",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_005.json",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "033ff2701c6de527b8367f8961534d74de4ad98a5e98ea6779b443f2d9f82f56",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_006.xml",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "1040be80bc51881a26a9af45cfd73cbda47b5ecec719b081c15f8da4fd6b28a4",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_007.yaml",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "04354ad7d927c2ae46aa2343cd2b8bed85d201e1a7638d060e8b633e9a9b4e2a",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_008.yml",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "4629eebc1cea56fe60211b9b1a412143439dafe064af7479accc0481d65c1c7b",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_009.toml",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "902528a251e18dff5aae8eb4b7cb6e312f1acc1760dc474b8f02201c7cdd2a97",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_010.ini",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "46ac24f59dd3878a1aecdede5c3d780269044e6391a2cde2e0551974f64007b5",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_011.cfg",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "d3352df51c67cf7483aacb74658b97f3bc8d2916ae1ebc87dd9d470dbc0c7014",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_012.conf",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "d1fbe90542ebd9da6c3a94619e49994933c4ce6c8834a59bd101a88f41a68351",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_013.csv",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "26e2f60cb8cd6d69dfbc7e2b40c370f3a73fa4efbe941e07253dc85a9fd9e7f3",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_014.tsv",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "d3c56496bc6d2fa238e745456fa4794c394feed773db147ace69fe74c69722f5",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_015.html",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "c2cd6f58fde37fa9ca84eb4ea0492c019c4401476b4579d619d229cc2144eee8",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_016.htm",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "1a9d1a80742b94236ba8710a1a00d90b8722db80c3846b604addac6a85d95673",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_017.md",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "0bfdc91027c10ee566dae04873021c444c7597615a160d1c3a2c9dcc1124c04b",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_018.sql",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "67fe5c219be2998b96ffd710852b43b5ce97e40e335931170236fa60cabac118",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_019.db",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "c0ae93de42dc4c706f5e290a67def2ef4e7dab90fe850e09053d741f506bb306",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_020.sqlite",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "ff84a14f3e9bba95a0078c6c49a8975a7a409bcdf5059569a662d86d907b6cf3",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_021.log",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "644a7a4c55b4e4e8d81ffa15e7f50fb0b832ecc4a23aa92ce7931185e184b851",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_022.txt",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "4d19895553bcae4041936194ba316a225568ef9a868de8c790dbb34e9f52dff9",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_023.out",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "ab405288d44cab6f701926259409fc73098c2c375bf0b92c96704c1ae62e734d",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_024.err",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "231f08db7f85946da3800e002028b84efc52c28b21a4636879866b8a673a1c85",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_025.json",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "4272f49c8274122fc2d97ac8c86000cf5765bd57ea9f9a1ac882a6a1602cc012",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_026.xml",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "2ff83416acfd03ff39da417dbba9fb7d98aad6f9d9cf89d49ee03c705d487533",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_027.yaml",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "30a497b340bb5f9b9e5f74c9482e432885f6375f3ccdf79648ed67375b178849",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_028.yml",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "cec0643fa494a7a588776945c50147743acf681b7f5b14f8e47cf4d80245d977",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_029.toml",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "5eca66f7c5a5f81e9aed14d53e4c9043596ae99f0fa776706c90da2c1f524f27",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_030.ini",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "81cad6f37fa5d9090d95f68bcb0594260d432934dcb31143826e6b9e5dfe7a86",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_031.cfg",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "1b02f31929e99a236c2d63554c6d5cce3eacba9e0fa2a0f4887eb0575b994025",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_032.conf",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "2f7e97d5f1fb73ab6ddb0e47d30f8e8629028d572028f3b7fa3a6b70d77cbfe2",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_033.csv",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "37b9f3323e7131e00154be155d3e8d3a240e13a60984988b040755cbc7aea07b",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_034.tsv",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "c1349c86e5720ba42dd0c70ee94b945e94d0c71270dd9c861a75889cf4a259ca",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_035.html",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "394572c517a54a2015c8e66a4ae472773a985f1e1b65fa01ab76892374635573",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_036.htm",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "a961886744f07a81cc3523ad07c94613e40a1c1e887e47f8ebf64451c111f0cf",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_037.md",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "fd710645b728571bc1638481b5e8eb8df96673ec7f179389039dd9a3aac74267",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_038.sql",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "2780c15f63c89eb5aded0b7cb744d6814bc5b608599cbaff758fe4f357a1d25c",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_039.db",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "692aa61a10267ef735529010247e1b4c4a35ea339518161c18ae72b75b088a39",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_040.sqlite",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "ac5f4a00ce506642e3e86c383c8d31e19d3b5063ac357801118780db6f114c12",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_041.log",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "c1018b16081fd128b90257f250032502e49b50d27645b1336798156163bcec2a",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_042.txt",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "092490af87de533915e04a2e8293667bd3592553e93d700293ab0829a1663e01",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_043.out",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "0a241794b9803bce94889984a5f5e8bce03af249c46a09bde1c1a0358cc946df",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_044.err",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "e734fe24d24114eef028c711a010caa410604b8b28df8668ed5f7518e98187bb",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_045.json",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "4156b7a14125e0d30f68575c18212c607b0ab880500b58c98e7d6fb17c82f933",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_046.xml",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "3ea499da6877f8c859899d1a9becc13f6558f69794fe1a5f63e48af1e0bce494",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_047.yaml",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "1f756759c82b9eb40ca7ad0ead7cfcb3d3c02c64e276b0f6df4473f735abc08c",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_048.yml",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "9961df6d978ced5a1d09de184a29e773ebf66ab08e30c6a69c579a320851a678",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_049.toml",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "c477db383055304069e70ec74d98914a49c72e594d6a7ef6c8e352006e87dd36",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_050.ini",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "98dfb7ff5728a5d808479126f5c4c4c6a5bbb9227dc1f9e9adc0b130042a14d0",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_051.cfg",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "d0a20eae8e4c704e64793896ec99782a1af8d7c86880d991c570196feafcdf88",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_052.conf",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "859609c6df696e24213d40c6dc3bebd86fccaf13cca9201d760074810cea43ba",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_053.csv",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "31d2d55c8ecb9ac599a4b496994c0ed490fbf6610c539422123a18e7ce5f53c1",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_054.tsv",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "bb6a37cd1ead3c37a481428376a6bfabe8e46defcf13880da69a807a28aff665",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_055.html",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "a85beed9eeca17687e8d6c2f816ef6e3f0e550cf28bcc60eb92708d04daa7250",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_056.htm",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "26e9543186a0281d37c51ad05e36a6cb8b3ef1c8349c785c2669b4f73637bfdd",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_057.md",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "ebb5c545b70e79718d052553861ce4174401f2ab40b25679d2e8049e7ca9fe3e",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_058.sql",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "696753d688f88079b652b11c9d3501b54bda282c4893b957d638aa0788ca05a4",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_059.db",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "2c97297879b64fd09b4ecbda86ed1d8267f41319cca1b8888a808e844f1149b0",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_060.sqlite",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "4f5408360ef73baf4dc11533a5ff271f486c90902a36ebfb396d95e818286af8",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_061.log",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "7f76ca32f30ec25654cccc23be2b4c816d0e4f61f13521af552c44ed3a5d6ade",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_062.txt",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "871bb0996f993a5abcb683a8d2cb555cbabbf997924e8752480d9f9168111f2d",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_063.out",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "c0e8a06fcea9ee7cd422bf3d60961c9700d8d39b3edbe49467d7c2f13fb9b7ab",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_064.err",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "f7e9e2f6ee3e9e75ba15d00e47e6e57644468cc6ffcba5dc06e0a77d199f90e2",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_065.json",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "c45875ece68207406311042565cac15ba0ec2aed370da4c26ae02c44d9e4e77f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_066.xml",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "1bd4799ab6d26ac605e2ab2b703f278573e4b672c3912cfe6fb7341a10f5b150",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_067.yaml",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "4d5f38ddd740dbbd776e9727017b7af189febc9c317ceb9e9c72a71bc5c36a54",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_068.yml",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "6a570fae53a1950f85406e06aa7bec20c2a974bfa1847e98ac6ec22c2b5c1ca7",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_069.toml",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "0d46ec787fdf99038e11fe47fb199b219122b074bf86ca684df61667a6423a26",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_070.ini",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "d94030244bcfe951ef0ff6141e5ee814604079cfeb15b53157a6fe1b5b76bf87",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_071.cfg",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "d0b467bd668752406a36bfedae21388e636901dd34d28735204f4561a60c98b4",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_072.conf",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "c5d6ef458cadfbb1dcba213cbfdd32e7f5b2433e7ecffac8d62e6b46433564d5",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_073.csv",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "292c8b98e347229443e5230195c24158d1439a773c75318d903c2e2bb770a448",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_074.tsv",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "036988447521b9daed0b3a4793bd19546991ee9a43c4d93829c48806d9a8d26f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_075.html",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "68b04193148c0ba0829ec0fc2071843006257c32c1cfff339d486ddebb5c143a",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_076.htm",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "110a701c86319f8f071859ac7cd7a94e982af6969c4e080b2030875382b4ae90",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_077.md",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "3c66555112b93486326561d0671e60a5763e03ae60720e7e5b6830c7bd32c19a",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_078.sql",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "a5040718eb0c59e6d372c857154d1ebd203b652d9033439fd031b4e06bfaebe7",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_079.db",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "74548e526c9dfef46adc9ad96a1c3986e62e76cc208b386d1762c81a4ffd1fc7",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_080.sqlite",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "1334912ec32f0c0045dc5914e924473ee07d83ecdff8223f9116fe42b1e870a8",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_081.log",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "8a3197be7835f6f19969f67c111705be6fdb02220af8f47218501f3f969afd9b",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_082.txt",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "d25352e728811b5c4d6cf20d250a63555f4304ce73c42f99f364a0669ea1f24b",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_083.out",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "990b7b8a78fb610409be3dd0a1b04ba3a4c53bc272acca5af65aa9c09df986ed",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_084.err",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "07d1fe8ce7fc98cf8a765368b9aee6fcabbf37647e557aadaca6bbeabcdfe299",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_085.json",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "66c86b2d6ad6168371222a23df571bc616317fa0db82d1c0e15459f4b03eded9",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_086.xml",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "c20b928db52ec9498ceefca61a18a8aad3415e2ae4e70866312fe445da234271",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_087.yaml",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "b70e84a157c92bca370ad97c5e6af8a52fd6cb0e69660c3e9af1859d4b0d0eb4",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_088.yml",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "d62645d22148a1588fafa308504e0c96dc398c599245479e0a5a093f2de5cb35",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_089.toml",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "5e3349b079f5ede0c6ab7469ee8c25b63531d606d26d0ace0481c3938bca9d89",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_090.ini",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "175e25297b4d41b415a0c1a5f69b7884b01a98e7e4340503be2df98d799b9193",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_091.cfg",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "42f26c1a79ac8124e54c186cf494824c48caa43ac3c5a8a22899b8b7465dc9b1",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_092.conf",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "42d6a67c207780a50c94c86f0b53400051d60c48c5fe8370e63351dc005cb286",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_093.csv",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "17bce1d66d0b4ec49926093cb52ab465cd9cf770c719cc042030acc91963c63d",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_094.tsv",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "7f6003a6e63326b36fa03fd2e31280064c7c499f015841f8ee5dbd4b3ec99264",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_095.html",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "a5b24b1ebc59d2066feca486af94364451958618b5eb370cf186f351eee7d3dc",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_096.htm",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "87421e262ee67691b1a9970c04eceadd653839098b8967ccf021979245da480b",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_097.md",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "cf84caba13ae23c72a9163f7f27f62577d5711546166d72a40aa253042c4da0f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_098.sql",
+      "category_expected": "DATA",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "b82c2e17d1cbbefb462a03a6fff318aad8b5751cade82ca9ca1923a0eff042fa",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_099.db",
+      "category_expected": "DATA",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "e1e9582367a96896ecd953e94cd04a8b5a3686cc9fde0b3d2b0e4b11f874cc4d",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "data/data_100.sqlite",
+      "category_expected": "DATA",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "d70d94832641f1cb07887f9b40fad9963297f85da94a258a927674691be32da2",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_001.exe",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "802d74b43f8f9aa1c9ffa8671043677e9af0de5f85de5da4bb727b367644a12b",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_002.dll",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "eadd8803884885e3d6f393c630b93f26a904268758605f7edea9b975bc8f6cbd",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_003.so",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "c1a05580ba62a28594546cbcd4f8fcf94158b8ba732cec620e0c606ddbe5937c",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_004.dylib",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "88af49724260b6ff136033245c25e545180d824962744b8f5f8ce8f23483a68f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_005.py",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "ffee60d003d316cf6a9c23af120e3fccc878fa34aa790ef2e4db012a11d00a44",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_006.sh",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "79c3d9eb5a7fd271e442e20cc05f54272b76f3e835bb735dce64e8bd41b3c7bf",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_007.bash",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "c7d5513a8f292deac18d826f8d87e3f415b38bf370cc2fe477d2b24468b86829",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_008.rb",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "e51444e3f27f6fa58ffba2489fd168b736e7d96f6bfd6bb835ef3bc088c5a229",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_009.js",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "00f60c9fd450975c67bf2eeb5e8340e43465d19ac30abaec25604da780ff117f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_010.ts",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "09dd7961596c3665408a623c4a71eef4699066b8d7373b5bbeac0b5e3595694f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_011.php",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "050853801bd4a8f91c236247fe7112c662fb147f9683b8c5d66d38f591e2cd81",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_012.pl",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "0878175c02f2f2d976dd5b94a23bb48896e808d6f8ae209bf2ae43459301b524",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_013.lua",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "b5d507555a9ac77185a123a0f6536a16058af3c3616676ce67433d32b40b1359",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_014.jar",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "c9933c1b65879f5aae1f78073ddb1b4db293bf0583183eab1d1a54182758fc0f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_015.class",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "8d5c77405a95f1db016b9b080510635e95512ffe10cef2988d67505ede7d7764",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_016.o",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "3145cf7883911f6352b9c14c08c7348a246c9c4566f9a8f646ee40e1badc4bcd",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_017.a",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "58abc140be726fef95b384dc70ffe8f2a0ba1423fce12f34defe205d62d7757d",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_018.exe",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "c3d0c8ccf384b0c1c8daccf8ad1b512ed9353d1553dd784bd71636b32e08aa6a",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_019.dll",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "e5f36f7dba3d98566b11d18f31c6f9563e5ae5a5dac5938fd2c635c09a2c0c85",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_020.so",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "e62ca6276cfc63678a4a0963378d8a459f3aa590712e518b705f4ac803e324c1",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_021.dylib",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "45db8bf61972b403559aac09b0a35bf6931bc63862028e0562685d5ba89b9d7a",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_022.py",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "a52788450d8c29cee99d6c2fe0c5df74bcfe3ef88162c93d52061592843b07e8",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_023.sh",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "03f12718dea43b10b0567d4009b6f80b189387e62cd45130cb8184a5b5951e4c",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_024.bash",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "b67fd2808c286afeb9d168dda03a375e22eeed7dc5b5d7a12ea55f1701a3a306",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_025.rb",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "bef49a9185fbd9469f9a42e50e1729320dfec741d206a78bae1b8e0ae84105d7",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_026.js",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "f44e59a7a6917f4b2396159eb400f53aa9001041b2d09a8b2d77cc30d00c4f79",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_027.ts",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "f71c7a6e138f636762f2e5ae28c48a3dbb89d48c8392a422673130f1d9e9f50f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_028.php",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "b07d8d6246b630b002f32e82bcdfe678a741151cc55e7fafde0be8019124e5c9",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_029.pl",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "c1947bd10baf1f9b0f766cc6943c80a59eb26ab4fabc028c77b282ab4002b011",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_030.lua",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "715077892dfd22fe84f0f1ba5872ef6ab65e889674757fa4e7f520ec36f77173",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_031.jar",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "10e4eae8098adca0c8609b6ba5018fa1e3c9588d0a2eb9699863fafe4ae34d19",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_032.class",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "745b55b7c345f71c9c984741b6507dd1f255e6286556896c01fd4d825cbe8749",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_033.o",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "bceb88a007f129eaa3bf6dbc89d37579c892111e7fd019b0aa22e7cb8620c0e2",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_034.a",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "79c4a671dfe5b3f5d7dfd51648d9461c57feeb87c25312940c3a5d37616828b2",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_035.exe",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "39ce4d1cfb6ed9c9a7b326ad737706360c9fd9caf94803eee66bf2d69cc11218",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_036.dll",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "f83f62b4daddfbed59ce4f8dec37cdf523b0df6466cc3a3b6bd2393b1e090085",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_037.so",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "d5da42e88787eda9611b7638fed9ecb60d8c26973bdd3b40acf2138dc2d92304",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_038.dylib",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "07e2175b9b801e783484ddca61909c5100f782fad161fd54b80ad427cfb6b2bd",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_039.py",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "a2853702b85278da48561004cd81cb6aaa7b960f54e8cff0cdac515a222bae83",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_040.sh",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "5c0cf113d58e943a0dfa5e6d8118a29c65cc4898ca81b7c1ce12888343bbee5c",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_041.bash",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "8db8f4660ba11aca405b87e88bf66fb6c9790cb83a42c71835d256ec728b7864",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_042.rb",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "62f0c99a85255e9f354e02f3e9dce871c44e56b9dc558de65733e53eae674dad",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_043.js",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "f5531bdd13c07b9271c615d97780b4fdf3d2f100d99df445fe1404ce41c0db56",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_044.ts",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "a4518888975f025335fa10fe148f1e6442133197aa62ba0fcd0f6f098016a0e6",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_045.php",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "494f65cd871c1a87d95ba6d5239f9d29639eb18a0cf776ff1493bbeb7d558197",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_046.pl",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "63874aa40f807a71be14f9eddb6e109c673420c2e15548048c73e29d8aacd345",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_047.lua",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "eab6f2a4aef4bd9a8e284ffa2ca87d29c9f65e7de584900047da6ad850ead8bf",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_048.jar",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "7973c04a8ba745614bcbf296924bbcafb7bbcbf443cfc398c2cbaa2e76090025",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_049.class",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "70515c2865c2bfb508b9939058f48c20fc1a9360ea6229a42c46779093b03473",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_050.o",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "10f06c619f6b91f209c28c46990808909c05f56e83166a2890561bd6ec9fd288",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_051.a",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "40cedb858c30af9158a6551479bc7cb1530ce0d6955d47e1224f5439bb945424",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_052.exe",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "6fb3c914a858dbf2d246eaeaf089b339c0e9eb838d73094f970017133c9f8912",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_053.dll",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "7c5726a09bfdf358283417badc84cd392f54f08b8ef811e432e0163a37a95fc9",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_054.so",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "3aedaa4a6f039cbf45017ef6cb21031596cda92dc36aa59950f96b0c967404b3",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_055.dylib",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "8cb43062fce09eb0811da80cae0e624704fc3604220f68583ff8d923b3788fd5",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_056.py",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "434e87be1aeee6d2a484eec0e5451cc8160461255e7430ef9fdd85ec299aff66",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_057.sh",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "563cb3c14e5aaf66c34b6ed1ef114ab3d35baaff8c00d29ad47498e16f045ca6",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_058.bash",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "a30a4e02a101c26ac697a495e4f47bc06729dae45d99cc08be96dbc7f31c9fa3",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_059.rb",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "b19370b4912e65e43db9995ee25ba4d4510271750e6cea94e980922581f5289c",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_060.js",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "2075ad283ea1900ec073b7194593c0405112796a96c3220d89785d96e376b83f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_061.ts",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "1c731bab2460930347ec9e698a83fc9a4a5a9da328298deed38ffd21d61abe36",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_062.php",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "44e28001cdc36854371b11d861c23fc1a5e1ffaec597b881e34faf9f01475aa0",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_063.pl",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "ef5e5382bbbba2bee6018f5ceff59ec45be2df22cd7c119965beae5fab7ae776",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_064.lua",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "d80922e057abc62d015e95407c440bd3f5c6fd0a460d0c980e490ff17f96e040",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_065.jar",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "71639146ad99d202a8ab2c5cce9f302e89d1991caf94e852e2f19dcc42270535",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_066.class",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "0cfb0ea499153225034230d11399bcd3407fec4f5687f64b489d6a49200d52f8",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_067.o",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "fd0ef5fd11b6619b423cbaca315c412072f2b6e7279cb39b8e16ee951f0cad3e",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_068.a",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "0372cdd8386be1d670c300695fc6c918583f465440210d14a9f8a367b6613662",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_069.exe",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "58645153c4bedafe426d20c3d0fd9d1e13a40f27e5b76efa7d798bde8abc95e3",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_070.dll",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "1438b3e01f940fab2fb9238e6981a320d40a8cc85b80d1f26f2dc4f4675078f1",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_071.so",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "87529f7093f6cf80be00cd77b2c74ae27a50f2bae933bf0434cc9468b9d5da8d",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_072.dylib",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "ff9532f380fbd672fa01c501d8362d1b6dd8cef516fe02ceb1391c417ae9fd09",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_073.py",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "a08aa5392016a1c076962620796902e8cf521c909a963c0e8f5967ecf578c988",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_074.sh",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "c95051ce2759d98a51ada654e9d24ec2785305528644d188e09200ca9e5aa452",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_075.bash",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "772d1dbbaa12c2bcac20c6f41da7f8f6d3e892971a66d2df006dd2bae72cbf03",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_076.rb",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "0578934575155ae6cdd3a380576c8e6078fb084cd1b2327facba0e5053864939",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_077.js",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "34aa827ce9e271b36d96841d6f9f4fd660636d67bbed353616080b9d7a5efb64",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_078.ts",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "bc88cb1210225b87bdddab8aff09c431951f9e7a3adf2e7094215cdce335c08b",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_079.php",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "3f0ad1f7cf8a198e96b7f496b1dfed4c58dead359061fdc6d243c6b02d977f19",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_080.pl",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "deca0ab259cfbea2bac535f3eac619a22c47bf186e6143ce0d4917f8d639439f",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_081.lua",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "4612cc48583e284125199c993608353d9027b5f1161c383c9e0987f574aa4e5e",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_082.jar",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "b79355bc1d3fcfa19875eba48a8e506bfbd6b3a4f3d68a93b147bceab4c02a8b",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_083.class",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "3e412f7dadf8f1c14174e832b5ed5a7d08bf20c3cc4cfdec4fa3ba142df101aa",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_084.o",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "f6c69d615faa76c5dfc37d8a256d0ebd5e2fa4b26eec5b53de245a6fb8281e6e",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_085.a",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "c0c1a78ab7dc0a5b75196d36095843364a069e2eb1efb4d5cf17fe4ab090094e",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_086.exe",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "39c719087b82220962821a84af3ff4eca09e1bc606d1a59d349adf6a05382b92",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_087.dll",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "5d8a6e6c2eda224a21ee70706372f803a65e7a1add061a4dfc8963bfaecb2bbc",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_088.so",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "f6a2b4ee43f9f59d410c59f0949f5e88bb95c9d6dead1131c442636eba208e09",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_089.dylib",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "55eeb5b185b177243c9cb4b1cbf864419f0e4321b253889a14fb738de1da55d4",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_090.py",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "6dde0bb6af13a149980d160cc78dfc27019367de5f2a26ed0b9bc83431d2f12c",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_091.sh",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "f243c50a12ce12bb188d1c2cea56b14b37bdedf85afcd82ce6fddb30933a13e8",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_092.bash",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "bc02a67c69bcbade2cae8de0071574120d5b26af5a2a1451f14138a22a129406",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_093.rb",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "b2a0531447437285f9ffa4e1fa1fff9a1b6533578152d7617a48d070c5a4a7d1",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_094.js",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "a1d571c6861746c77801b305313f0685cc13e6318768ef5ffcbcd401d05b6711",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_095.ts",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "6b1f4c51938af6f6b7639c80638d46442b35d6d9b49b64e02207d74f9fd873b3",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_096.php",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "e9d6cf4d097320b2b364237d925391746083eaf3b75c2685606ce53d2b8a590c",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_097.pl",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "f87263029afb8e570973d0c8d3f6be40c5aa96e4416e59578e6c9ab46754bae4",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_098.lua",
+      "category_expected": "EXECUTABLE",
+      "size_band": "medium_64KiB",
+      "size_bytes": 65536,
+      "sha256": "28eba6e33a8c4155b3b9386c2352e138175b4e1e75f73b67a8bb58c288888b56",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_099.jar",
+      "category_expected": "EXECUTABLE",
+      "size_band": "large_256KiB",
+      "size_bytes": 262144,
+      "sha256": "a3284fed5bef9e2730a0875ac2ed045d373cc00e1e61ccf397cffe8376e4f233",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    },
+    {
+      "relative_path": "executables/executable_100.class",
+      "category_expected": "EXECUTABLE",
+      "size_band": "small_4KiB",
+      "size_bytes": 4096,
+      "sha256": "8b0e5089cced7b5bda3248c5ac0247ca33e012ce3a9f06c31d5d14ebd3be9cf4",
+      "seed": 20261015,
+      "fixture_type": "synthetic_byte_fixture_not_for_execution"
+    }
+  ]
+}

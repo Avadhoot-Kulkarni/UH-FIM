@@ -1,0 +1,21 @@
+{
+  "dataset": "UH-FIM 300-file synthetic integrity benchmark",
+  "dataset_file_count": 300,
+  "positive_file_mutation_cases": 300,
+  "clean_control_cases": 300,
+  "additional_positive_cases": 2,
+  "metrics": {
+    "rows": 602,
+    "TP": 302,
+    "FN": 0,
+    "FP": 0,
+    "TN": 300,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall_detection_rate": 1.0,
+    "false_positive_rate": 0.0,
+    "f1": 1.0
+  },
+  "methodology_note": "Main cases simulate ordinary content changes whose file modification time changes. The score is specific to this controlled synthetic suite, not production accuracy. The separate stealth stress set preserves metadata and is reported independently.",
+  "caveat": "The content and extension distribution are synthetic. Verify all result CSVs before reporting metrics in a paper."
+}
